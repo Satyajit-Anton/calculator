@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head><title>SIMPLE CALCULATOR</title>
+    <style>
+        body{
+         background-color: aquamarine;
+        }
+    button{
+        background-color: #4CAF50;
+        text-align: center;
+        border: none;
+        align-content: center;
+        width: 80px;
+        height: 32px;
+        font-size: 16px;
+        margin-right: 10px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    input{
+        width: 500px;
+        height: 40px;
+        font-size: 24px;
+        
+
+    }
+    @media screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* For screens larger than 768 pixels */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+    </style>
+</head>
+<body>
+<h1>Hey User Welcome to Anton_pk Webpage<br>Here is the Simple Calculator</h1>
+<input id="number">
+<br>
+<br>
+<button onclick="number.value='' ">CE</button>
+<button onclick="number.value= number.value.slice(0,-1)">DEL</button>
+<button onclick="number.value=eval(number.value)">=</button>
+<br>
+<button onclick="number.value+='0' ">0</button>
+<button onclick="number.value+='1' ">1</button>
+<button onclick="number.value+='2' ">2</button>
+<button onclick="number.value+='3' ">3</button>
+<button onclick="number.value+='4' ">4</button>
+<br>
+<button onclick="number.value+='5' ">5</button>
+<button onclick="number.value+='6' ">6</button>
+<button onclick="number.value+='7' ">7</button>
+<button onclick="number.value+='8' ">8</button>
+<button onclick="number.value+='9' ">9</button>
+<br>
+<button onclick="number.value+='+' ">+</button>
+<button onclick="number.value+='-' ">-</button>
+<button onclick="number.value+='*' ">*</button>
+<button onclick="number.value+='/' ">/</button>
+<button onclick="number.value+='%' ">%</button>
+</body>
+</html>
